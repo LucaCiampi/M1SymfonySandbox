@@ -1,3 +1,6 @@
 controllers:
     resource: ../src/Controller/
     type: attribute
+
+task_success:
+    path: success

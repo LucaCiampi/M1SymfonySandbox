@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block head %}
+	{{ parent() }}
+{% endblock %}
+
+{% block title %}Article
+{% endblock %}
+
+{% block body %}
+	<article>
+		<time datetime="{{ 'now'|date(date_format) }}"></time>
+	</article>
+{% endblock %}

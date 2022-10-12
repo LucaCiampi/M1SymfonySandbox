@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block head %}
+	{{ parent() }}
+	<link href="{{ asset('css/search.css') }}" rel="stylesheet"/>
+{% endblock %}
+
+{% block title %}Search result
+{% endblock %}
+
+{% block body %}
+	<div>
+		<h1>{{ app.request.locale }}
+		{{ app.request.query.get('search') }}</h1>
+
+        <br />----<br />
+		Search result for
+		{{ query["search"] }}
+		on page
+		{{ query["page"] }}
+	</div>
+{% endblock %}
